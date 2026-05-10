@@ -1192,23 +1192,6 @@
       font-size: 13px;
     }
 
-    .mobile-cta {
-      display: none;
-      position: fixed;
-      left: 14px;
-      right: 14px;
-      bottom: 14px;
-      z-index: 60;
-      min-height: 56px;
-      align-items: center;
-      justify-content: center;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--pink), var(--pink-deep));
-      color: white;
-      font-weight: 900;
-      box-shadow: 0 18px 42px rgba(126, 63, 88, 0.28);
-    }
-
     .reveal {
       opacity: 0;
       transform: translateY(28px);
@@ -1288,10 +1271,9 @@
     }
 
     @media (max-width: 680px) {
-     .nav-actions .btn-primary {
-  display: none;
+      .container {
+        width: min(100% - 28px, var(--max));
       }
-    }
 
       .section {
         padding: 78px 0;
@@ -1904,8 +1886,6 @@
       <p class="copyright">© <span id="year"></span> Blush Atelier. All rights reserved.</p>
     </div>
   </footer>
-
-  <a href="#booking" class="mobile-cta">Book Your Appointment →</a>
 
   <script>
     const nav = document.getElementById("nav");
